@@ -2,9 +2,9 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <title>Wagner Unternehmensgruppe – Wohnen, Bad, Service & Stil</title>
+  <title>Wagner Unternehmensgruppe – Ein Partner für Ihr Zuhause</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Wagner Unternehmensgruppe – Wohnbau, Bäder, mobile Sanitärlösungen und Friseurhandwerk. Nachhaltig, standorttreu und fair – Qualität von Unternehmen aus Deutschland." />
+  <meta name="description" content="Familiengeführte Wagner Unternehmensgruppe: Wohnen, Bäder, Toilettenwagen und Friseurservice. Ein Partner, vier Leistungen – solide Qualität zu fairen Preisen." />
   <meta name="robots" content="index,follow" />
 
   <!-- Webfont -->
@@ -12,10 +12,10 @@
 
   <style>
     :root {
-      --primary: #155a9c;          /* solides Mittelblau */
-      --primary-dark: #0c3b66;     /* dunkleres Blau für Kontrast */
-      --primary-light: #e9f2ff;    /* sehr helles Blau */
-      --accent: #1a73e8;           /* Akzent-Blau */
+      --primary: #155a9c;
+      --primary-dark: #0c3b66;
+      --primary-light: #e9f2ff;
+      --accent: #1a73e8;
       --bg: #f5f7fb;
       --text: #202733;
       --muted: #5b6473;
@@ -190,14 +190,22 @@
     .hero-sub {
       font-size: 15px;
       color: var(--muted);
-      margin-bottom: 20px;
+      margin-bottom: 18px;
+    }
+
+    .hero-actions {
+      margin-top: 2px;
+      margin-bottom: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
     .hero-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0,1fr));
       gap: 18px;
-      margin-top: 16px;
+      margin-top: 6px;
       font-size: 12px;
     }
 
@@ -219,13 +227,6 @@
       font-size: 12px;
       margin: 4px 0 0;
       color: #555e6d;
-    }
-
-    .hero-actions {
-      margin-top: 18px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
     }
 
     .btn-primary,
@@ -294,7 +295,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-top: 8px;
+      margin-top: 4px;
     }
 
     .hero-tag {
@@ -327,12 +328,12 @@
     .section-sub {
       font-size: 14px;
       color: var(--muted);
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     /* Geschäftsbereiche */
     .areas {
-      margin-top: 10px;
+      margin-top: 0;
       margin-bottom: 14px;
     }
 
@@ -351,14 +352,14 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      min-height: 170px;
+      min-height: 160px;
     }
 
     .area-header {
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .area-icon {
@@ -383,13 +384,13 @@
     .area-subtitle {
       font-size: 12px;
       color: var(--muted);
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .area-text {
       font-size: 13px;
       color: #4b5565;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .area-link {
@@ -449,72 +450,6 @@
     .value-text {
       font-size: 13px;
       color: #4b5563;
-    }
-
-    /* Gründungsphase */
-    .phase {
-      margin-top: 8px;
-      margin-bottom: 18px;
-    }
-
-    .phase-card {
-      background: linear-gradient(120deg, #ffffff, #eef3ff);
-      border-radius: var(--radius-xl);
-      padding: 18px 18px;
-      border: 1px solid #d7e3ff;
-      display: grid;
-      grid-template-columns: minmax(0, 3.5fr) minmax(0, 2.5fr);
-      gap: 18px;
-      align-items: center;
-    }
-
-    .phase-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      font-size: 11px;
-      padding: 5px 10px;
-      border-radius: 999px;
-      background: rgba(21,90,156,0.08);
-      color: var(--primary-dark);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-    }
-
-    .phase-badge span {
-      font-size: 16px;
-    }
-
-    .phase-text-main {
-      font-size: 14px;
-      color: #374151;
-      margin-top: 9px;
-      margin-bottom: 8px;
-    }
-
-    .phase-text-sub {
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    .phase-list {
-      font-size: 13px;
-      color: #374151;
-      padding-left: 18px;
-      margin: 8px 0 0;
-    }
-
-    .phase-aside {
-      background: #ffffff;
-      border-radius: 16px;
-      padding: 12px 12px;
-      border: 1px dashed #c4d2ee;
-      font-size: 13px;
-      color: #4b5563;
-    }
-
-    .phase-aside strong {
-      color: var(--primary-dark);
     }
 
     /* Kontakt */
@@ -674,9 +609,6 @@
       .values-grid {
         grid-template-columns: repeat(2, minmax(0,1fr));
       }
-      .phase-card {
-        grid-template-columns: 1fr;
-      }
       .contact {
         grid-template-columns: 1fr;
       }
@@ -719,7 +651,7 @@
     "@type": "Organization",
     "name": "Wagner Unternehmensgruppe",
     "url": "https://ug-wagner.xwise.one",
-    "description": "Unternehmensgruppe in Gründung mit den Bereichen Wohnen, Bäder, mobile Sanitärlösungen und Friseurhandwerk. Fokus auf Nachhaltigkeit, Standort Deutschland und faire Preise.",
+    "description": "Familiengeführte Unternehmensgruppe mit den Bereichen Wohnen, Bäder, mobile Sanitärlösungen und Friseurhandwerk. Ein Partner, vier Leistungen – solide Qualität zu fairen Preisen.",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "DE"
@@ -757,12 +689,12 @@
         <div class="logo-mark">W</div>
         <div>
           <div class="logo-text-main">Wagner Unternehmensgruppe</div>
-          <div class="logo-text-sub">UG • Wohnen • Bad • Service • Stil</div>
+          <div class="logo-text-sub">Familienunternehmen • Wohnen • Bad • Service • Stil</div>
         </div>
       </div>
       <nav>
-        <a href="#about">Überblick</a>
-        <a href="#areas">Geschäftsbereiche</a>
+        <a href="#about">Warum Wagner?</a>
+        <a href="#areas">Leistungen</a>
         <a href="#values">Werte</a>
         <a href="#contact">Kontakt</a>
       </nav>
@@ -778,35 +710,34 @@
       <div class="hero-left">
         <div class="hero-badge">
           <div class="dot"></div>
-          <span>Unternehmensgruppe in Gründung</span>
+          <span>Familienunternehmen aus Deutschland</span>
         </div>
-        <h1>Starke Lösungen für Wohnen, Bad, Service und Stil – aus einer Hand.</h1>
+        <h1>Ein Partner. Vier Leistungen. Alles für Ihr Zuhause und Ihre Events.</h1>
         <p class="hero-sub">
-          Die Wagner Unternehmensgruppe bündelt Wohnbau-Projekte, hochwertige Bäder,
-          mobile Sanitärlösungen und modernes Friseurhandwerk. Solide Qualität,
-          verlässliche Abwicklung und klare Werte für die Mittelschicht und gehobene Mittelschicht.
+          Wagner bündelt Wohnen, Bäder, Toilettenwagen und Friseurservice.
+          Für Sie heißt das: ein Ansprechpartner, klare Abläufe, verlässliche Qualität.
         </p>
         <div class="hero-actions">
           <a href="#areas" class="btn-primary">
-            Geschäftsbereiche entdecken
+            Direkt zu den Leistungen
             <span>›</span>
           </a>
-          <a href="#values" class="btn-secondary">
-            Unsere Werte
+          <a href="#about" class="btn-secondary">
+            Warum das für Sie gut ist
           </a>
         </div>
         <div class="hero-grid">
           <div class="hero-grid-item">
-            <strong>Standorttreu</strong>
-            <p>Fokus auf Deutschland – kurze Wege, klare Verantwortung, nah am Kunden.</p>
+            <strong>Alles aus einer Hand</strong>
+            <p>Ein Familienbetrieb für Haus, Bad, Events und Stil – spart Zeit, Nerven und Abstimmungsstress.</p>
           </div>
           <div class="hero-grid-item">
-            <strong>Nachhaltig gedacht</strong>
-            <p>Bewusste Auswahl von Materialien, Lieferanten und Betriebsmitteln.</p>
+            <strong>Solide & fair</strong>
+            <p>Wertige Qualität zu Preisen, die zur Mittel- und gehobenen Mittelschicht passen.</p>
           </div>
           <div class="hero-grid-item">
-            <strong>Fair & wertig</strong>
-            <p>Top-Qualität zu fairen Preisen – ohne überflüssigen Schnickschnack.</p>
+            <strong>Kurze Wege</strong>
+            <p>Direkte Ansprechpartner statt Hotline-Marathon. Entscheidungen im Familienkreis, nicht im Konzern.</p>
           </div>
         </div>
       </div>
@@ -814,8 +745,8 @@
         <div class="hero-panel">
           <h2>ug-Wagner.xwise.one</h2>
           <p>
-            Auf dieser Seite erhalten Sie einen schnellen Überblick über alle Unternehmen der
-            Wagner Gruppe – mit direkter Weiterleitung zu den einzelnen Angeboten.
+            Die Zentrale für Ihren Überblick: Von hier aus gelangen Sie mit einem Klick zu allen
+            Unternehmen der Wagner Gruppe.
           </p>
           <div class="hero-tags">
             <div class="hero-tag">Wohnbau & Ausbau</div>
@@ -825,34 +756,30 @@
           </div>
         </div>
         <div class="hero-note">
-          <strong>Hinweis zur Phase:</strong><br />
-          Die Wagner Unternehmensgruppe befindet sich in der Gründungs- und Aufbauphase.
-          Das Fundament entsteht jetzt – weitere Projekte und Geschäftsfelder sind in Planung.
+          <strong>Auf den Punkt:</strong><br />
+          Sie kümmern sich um Ihr Leben – wir kümmern uns um Wohnen, Bad, saubere Events und einen gepflegten Auftritt.
         </div>
       </div>
     </section>
 
-    <!-- ÜBERBLICK -->
+    <!-- ÜBERBLICK / WHY -->
     <section class="section" id="about">
-      <h2 class="section-title">Über die Wagner Unternehmensgruppe</h2>
+      <h2 class="section-title">Warum eine Unternehmensgruppe – und was Sie davon haben</h2>
       <p class="section-sub">
-        Ein klar strukturiertes Firmenverbund-Konzept, das Wohnen, Alltag und Wohlbefinden
-        intelligent verbindet – mit Fokus auf Qualität aus Deutschland.
+        Ein Familienunternehmen, das die wichtigsten Themen rund um Ihr Zuhause bündelt.
       </p>
-      <p style="font-size:14px; color:#4b5563; max-width:780px;">
-        Die Wagner Unternehmensgruppe vereint unterschiedliche, sich ergänzende Bereiche:
-        vom Wohnbau und Innenausbau über hochwertige Bäder und mobile Sanitärlösungen bis
-        hin zu professionellen Friseurdienstleistungen. Alle Unternehmen verfolgen denselben
-        Anspruch: verlässliche Qualität, nachhaltiges Handeln und faire Konditionen für
-        Menschen, die Wert auf solide Lösungen legen.
-      </p>
+      <ul style="list-style: none; padding: 0; margin: 0; font-size:14px; color:#4b5563;">
+        <li>• <strong>Weniger Abstimmung:</strong> Wohnen, Bad, Toilettenwagen, Friseur – aus einem vertrauten Umfeld.</li>
+        <li>• <strong>Mehr Sicherheit:</strong> Familienbetrieb mit Name und Gesicht statt anonymer Ketten.</li>
+        <li>• <strong>Klarer Anspruch:</strong> Qualität aus Deutschland, nachhaltiger Einkauf, faire Preise.</li>
+      </ul>
     </section>
 
     <!-- GESCHÄFTSBEREICHE -->
     <section class="section areas" id="areas">
-      <h2 class="section-title">Geschäftsbereiche im Überblick</h2>
+      <h2 class="section-title">Leistungen der Wagner Unternehmensgruppe</h2>
       <p class="section-sub">
-        Vier Schwerpunkte, ein gemeinsamer Anspruch: nachhaltig, wertig, verlässlich.
+        Vier Bereiche – ein roter Faden: verlässliche Qualität für Ihr Leben im Alltag.
       </p>
 
       <div class="areas-grid">
@@ -867,9 +794,8 @@
               </div>
             </div>
             <div class="area-text">
-              Wohnprojekte mit Blick auf Alltagstauglichkeit, Wertbeständigkeit und
-              gutes Wohngefühl. Von der Planung bis zur Umsetzung mit verlässlichen
-              Partnern aus Deutschland.
+              Für alle, die solide bauen oder sanieren wollen: durchdachte Wohnprojekte,
+              die im Alltag funktionieren – nicht nur auf dem Papier.
             </div>
           </div>
           <div class="area-link">
@@ -890,8 +816,8 @@
               </div>
             </div>
             <div class="area-text">
-              Funktionale, hochwertige Bäder mit klaren Linien. Durchdachte Lösungen,
-              langlebige Materialien und eine saubere Umsetzung für jeden Tag.
+              Bäder, in denen man morgens nicht fluchen muss: funktional, hochwertig,
+              langlebig – ohne übertriebene Showeffekte.
             </div>
           </div>
           <div class="area-link">
@@ -912,8 +838,8 @@
               </div>
             </div>
             <div class="area-text">
-              Mobile Sanitärlösungen für Feste, Veranstaltungen und Baustellen.
-              Zuverlässig, sauber und komfortabel – damit sich Gäste und Teams wohlfühlen.
+              Saubere, zuverlässige Toilettenwagen für Feste und Baustellen. Damit Ihre Gäste
+              und Teams keinen Grund zum Meckern haben.
             </div>
           </div>
           <div class="area-link">
@@ -934,8 +860,8 @@
               </div>
             </div>
             <div class="area-text">
-              Persönlicher Service, typgerechte Beratung und sorgfältiges Handwerk
-              für einen gepflegten Auftritt im Alltag und zu besonderen Anlässen.
+              Ein Friseursalon, der zuhört und mitdenkt – für einen gepflegten Auftritt im Alltag
+              und bei besonderen Anlässen.
             </div>
           </div>
           <div class="area-link">
@@ -949,73 +875,41 @@
 
     <!-- WERTE -->
     <section class="section values" id="values">
-      <h2 class="section-title">Werte, die die Gruppe verbinden</h2>
+      <h2 class="section-title">Was uns wichtig ist</h2>
       <p class="section-sub">
-        Nicht nur das Ergebnis zählt, sondern auch, wie es entsteht.
+        Werte, die Sie als Kunde direkt spüren – nicht nur auf der Website.
       </p>
 
       <div class="values-grid">
         <article class="value-card">
           <div class="value-label">
-            <span>🌱</span> Nachhaltigkeit mit Augenmaß
+            <span>🌱</span> Nachhaltigkeit mit Verstand
           </div>
           <div class="value-text">
-            Die Auswahl von Materialien, Lieferanten und Abläufen erfolgt
-            bewusst. Es geht um langlebige Lösungen statt kurzfristiger Effekte –
-            im Bau, im Service und im laufenden Betrieb.
+            Bewusste Auswahl von Materialien, Lieferanten und Betriebsmitteln. Ziel: langlebige
+            Lösungen statt Wegwerf-Mentalität.
           </div>
         </article>
 
         <article class="value-card">
           <div class="value-label">
-            <span>🇩🇪</span> Fokus auf den Standort Deutschland
+            <span>🇩🇪</span> Fokus auf Unternehmen in Deutschland
           </div>
           <div class="value-text">
-            Wo immer möglich werden Produkte, Geschäftsausstattungen und
-            Betriebsmittel von Unternehmen aus Deutschland bezogen. Das stärkt
-            regionale Strukturen und sichert Qualität.
+            Wo es sinnvoll ist, arbeiten wir mit deutschen Betrieben. Das stärkt den Standort
+            und sichert die Qualität für Sie.
           </div>
         </article>
 
         <article class="value-card">
           <div class="value-label">
-            <span>🤝</span> Top-Qualität zu fairen Preisen
+            <span>🤝</span> Ehrliche Preise, klare Zusagen
           </div>
           <div class="value-text">
-            Die Wagner Gruppe positioniert sich bewusst im soliden Segment:
-            wertige Leistungen, transparente Konditionen und eine Zusammenarbeit
-            auf Augenhöhe – ohne überzogene Versprechen.
+            Kein Luxusmarketing, kein Dumping. Solide Leistungen, nachvollziehbare Preise
+            und eine Zusammenarbeit auf Augenhöhe.
           </div>
         </article>
-      </div>
-    </section>
-
-    <!-- GRÜNDUNGSPHASE -->
-    <section class="section phase">
-      <div class="phase-card">
-        <div>
-          <div class="phase-badge">
-            <span>●</span> Aufbauphase
-          </div>
-          <div class="phase-text-main">
-            Die Wagner Unternehmensgruppe befindet sich im strukturierten Aufbau.
-          </div>
-          <div class="phase-text-sub">
-            Bestehende Unternehmen werden zu einer klaren Gruppe geordnet, weitere
-            Bausteine können folgen. Im Fokus stehen:
-          </div>
-          <ul class="phase-list">
-            <li>strategische Bündelung der bestehenden Marken,</li>
-            <li>klare Strukturen für Kunden und Partner,</li>
-            <li>gezielter Ausbau von Qualität, Service und Angebot.</li>
-          </ul>
-        </div>
-        <aside class="phase-aside">
-          <strong>Für Partner und Lieferanten:</strong><br />
-          Wenn Ihnen Nachhaltigkeit, Verlässlichkeit und der Standort Deutschland
-          wichtig sind, ist die Wagner Unternehmensgruppe ein interessanter
-          Partner – insbesondere im Bereich Baustoffe, Ausstattung und Services.
-        </aside>
       </div>
     </section>
 
@@ -1025,29 +919,27 @@
         <h3>Kontakt zur Wagner Unternehmensgruppe</h3>
         <div class="contact-highlight">
           <span>ⓘ</span>
-          Erste Anlaufstelle für Anfragen zur Gruppe und zu Kooperationen.
+          Eine Anfrage – wir zeigen Ihnen den passenden Bereich.
         </div>
         <p>
-          Sie möchten mehr über die Unternehmensgruppe erfahren, eine
-          Kooperation prüfen oder sich als Lieferant vorstellen? Nutzen Sie das
-          Kontaktformular oder schreiben Sie direkt eine E-Mail.
+          Sie planen ein Projekt, ein Fest oder möchten einfach wissen, was machbar ist?
+          Melden Sie sich kurz – wir sortieren intern vor.
         </p>
         <p>
           <strong>E-Mail:</strong> <a href="mailto:info@ug-wagner.xwise.one">info@ug-wagner.xwise.one</a><br />
           <strong>Web:</strong> <a href="https://ug-wagner.xwise.one">ug-Wagner.xwise.one</a>
         </p>
         <p style="font-size:12px; color:#6b7280; margin-top:10px;">
-          Für konkrete Projektanfragen (z.&nbsp;B. Badumbau, Wohnprojekt,
-          Toilettenwagen oder Friseurtermin) nutzen Sie bitte direkt die jeweilige
-          Website des Geschäftsbereichs.
+          Wenn Sie schon genau wissen, was Sie brauchen, können Sie auch direkt die jeweilige
+          Website des Geschäftsbereichs nutzen.
         </p>
       </div>
 
       <form class="contact-form">
         <h3>Kurze Nachricht senden</h3>
         <p>
-          Diese Anfrage dient als erste Kontaktaufnahme zur Unternehmensgruppe.
-          Die finale technische Umsetzung des Formulars kann je nach System noch erfolgen.
+          Dieses Formular ist der einfache Einstieg. Die technische Anbindung kann
+          je nach System noch folgen.
         </p>
         <div class="form-row">
           <div class="form-group">
@@ -1061,18 +953,17 @@
         </div>
         <div class="form-group">
           <label for="topic">Betreff</label>
-          <input id="topic" type="text" name="topic" placeholder="z. B. Kooperation, Lieferant, Rückfrage" />
+          <input id="topic" type="text" name="topic" placeholder="z. B. Badumbau, Event, Kooperation" />
         </div>
         <div class="form-group">
           <label for="message">Nachricht</label>
           <textarea id="message" name="message" placeholder="Ihre Nachricht an die Wagner Unternehmensgruppe"></textarea>
         </div>
         <button type="submit" class="btn-primary">
-          Anfrage unverbindlich absenden
+          Anfrage absenden
         </button>
         <div class="form-note">
-          Hinweis: Dieses Formular benötigt noch eine technische Anbindung. Bis dahin
-          nutzen Sie bitte bevorzugt die E-Mail-Adresse.
+          Hinweis: Bis die Formulartechnik aktiv ist, erreicht uns Ihre Anfrage am sichersten per E-Mail.
         </div>
       </form>
     </section>
@@ -1084,8 +975,8 @@
         © <span id="year"></span> Wagner Unternehmensgruppe – ug-Wagner.xwise.one
       </div>
       <div class="footer-group">
-        <span>Made in Germany.</span>
-        <span>Fokus auf Nachhaltigkeit und faire Partnerschaften.</span>
+        <span>Familienunternehmen.</span>
+        <span>Solide. Nah. Verlässlich.</span>
       </div>
     </div>
   </footer>
