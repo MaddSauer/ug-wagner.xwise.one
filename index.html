@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wagner Unternehmensgruppe – Wohnen, Bad, Service & Stil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Wagner Unternehmensgruppe – Wohnbau, Bäder, mobile Sanitärlösungen und Friseurhandwerk. Nachhaltig, standorttreu und fair – Qualität von Unternehmen aus Deutschland." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Webfont -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #155a9c;          /* solides Mittelblau */
+      --primary-dark: #0c3b66;     /* dunkleres Blau für Kontrast */
+      --primary-light: #e9f2ff;    /* sehr helles Blau */
+      --accent: #1a73e8;           /* Akzent-Blau */
+      --bg: #f5f7fb;
+      --text: #202733;
+      --muted: #5b6473;
+      --white: #ffffff;
+      --shadow-soft: 0 12px 30px rgba(15, 60, 120, 0.10);
+      --radius-lg: 18px;
+      --radius-xl: 26px;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: var(--white);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 14px;
+      background: radial-gradient(circle at 30% 20%, #ffffff, #9ec7ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--primary-dark);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.20);
+    }
+
+    .logo-text-main {
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: 0.03em;
+    }
+
+    .logo-text-sub {
+      font-size: 11px;
+      opacity: 0.85;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      font-size: 14px;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      opacity: 0.9;
+      padding-bottom: 3px;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover {
+      border-bottom-color: rgba(255,255,255,0.7);
+    }
+
+    .header-cta {
+      display: none;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .section {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 26px 18px;
+    }
+
+    /* Hero */
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 3.2fr) minmax(0, 2.8fr);
+      gap: 30px;
+      padding-top: 28px;
+      padding-bottom: 34px;
+    }
+
+    .hero-left {
+      padding: 26px 24px;
+      background: radial-gradient(circle at top left, #ffffff, #eef4ff);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(255,255,255,0.9);
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.9);
+      color: var(--primary-dark);
+      margin-bottom: 10px;
+    }
+
+    .hero-badge span {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      opacity: 0.9;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #4caf50;
+      box-shadow: 0 0 0 4px rgba(105, 240, 174, 0.4);
+    }
+
+    h1 {
+      font-size: clamp(26px, 3vw, 32px);
+      line-height: 1.2;
+      margin: 0 0 12px;
+    }
+
+    .hero-sub {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 18px;
+      margin-top: 16px;
+      font-size: 12px;
+    }
+
+    .hero-grid-item {
+      padding: 10px 10px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid #dde5f6;
+    }
+
+    .hero-grid-item strong {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--primary-dark);
+    }
+
+    .hero-grid-item p {
+      font-size: 12px;
+      margin: 4px 0 0;
+      color: #555e6d;
+    }
+
+    .hero-actions {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--white);
+      box-shadow: 0 8px 22px rgba(26,115,232,0.35);
+    }
+
+    .btn-primary:hover {
+      filter: brightness(1.08);
+      text-decoration: none;
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.9);
+      color: var(--primary-dark);
+      border: 1px solid #d2d9ea;
+    }
+
+    .btn-secondary:hover {
+      background: #f4f6fb;
+      text-decoration: none;
+    }
+
+    .hero-right {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .hero-panel {
+      padding: 18px 18px;
+      border-radius: var(--radius-xl);
+      background: linear-gradient(145deg, var(--primary), var(--primary-dark));
+      color: var(--white);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-panel h2 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .hero-panel p {
+      font-size: 14px;
+      opacity: 0.96;
+      margin: 0 0 10px;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .hero-tag {
+      font-size: 11px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.35);
+      opacity: 0.94;
+    }
+
+    .hero-note {
+      padding: 14px 14px;
+      border-radius: var(--radius-lg);
+      background: #ffffff;
+      border: 1px solid #dfe6f4;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .hero-note strong {
+      color: var(--primary-dark);
+    }
+
+    /* Abschnittstitel */
+    .section-title {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .section-sub {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    /* Geschäftsbereiche */
+    .areas {
+      margin-top: 10px;
+      margin-bottom: 14px;
+    }
+
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 18px;
+    }
+
+    .area-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 16px 14px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid #e4ebf7;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 170px;
+    }
+
+    .area-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+
+    .area-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      background: var(--primary-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+
+    .area-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
+
+    .area-subtitle {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .area-text {
+      font-size: 13px;
+      color: #4b5565;
+      margin-bottom: 10px;
+    }
+
+    .area-link {
+      margin-top: auto;
+    }
+
+    .area-link a {
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .area-link a span {
+      font-size: 12px;
+    }
+
+    .area-link a:hover {
+      text-decoration: underline;
+    }
+
+    /* Werte */
+    .values {
+      margin-top: 4px;
+      margin-bottom: 18px;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 18px;
+    }
+
+    .value-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 14px 14px;
+      border: 1px solid #dde5f3;
+    }
+
+    .value-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      margin-bottom: 6px;
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+
+    .value-label span {
+      font-size: 18px;
+    }
+
+    .value-text {
+      font-size: 13px;
+      color: #4b5563;
+    }
+
+    /* Gründungsphase */
+    .phase {
+      margin-top: 8px;
+      margin-bottom: 18px;
+    }
+
+    .phase-card {
+      background: linear-gradient(120deg, #ffffff, #eef3ff);
+      border-radius: var(--radius-xl);
+      padding: 18px 18px;
+      border: 1px solid #d7e3ff;
+      display: grid;
+      grid-template-columns: minmax(0, 3.5fr) minmax(0, 2.5fr);
+      gap: 18px;
+      align-items: center;
+    }
+
+    .phase-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 11px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: rgba(21,90,156,0.08);
+      color: var(--primary-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .phase-badge span {
+      font-size: 16px;
+    }
+
+    .phase-text-main {
+      font-size: 14px;
+      color: #374151;
+      margin-top: 9px;
+      margin-bottom: 8px;
+    }
+
+    .phase-text-sub {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .phase-list {
+      font-size: 13px;
+      color: #374151;
+      padding-left: 18px;
+      margin: 8px 0 0;
+    }
+
+    .phase-aside {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 12px 12px;
+      border: 1px dashed #c4d2ee;
+      font-size: 13px;
+      color: #4b5563;
+    }
+
+    .phase-aside strong {
+      color: var(--primary-dark);
+    }
+
+    /* Kontakt */
+    .contact {
+      margin-top: 8px;
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.6fr);
+      gap: 20px;
+    }
+
+    .contact-info {
+      font-size: 14px;
+      color: #4b5563;
+    }
+
+    .contact-info h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 16px;
+      color: var(--primary-dark);
+    }
+
+    .contact-info p {
+      margin: 0 0 6px;
+    }
+
+    .contact-info strong {
+      color: var(--primary-dark);
+    }
+
+    .contact-highlight {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      background: var(--primary-light);
+      border-radius: 999px;
+      font-size: 12px;
+      color: var(--primary-dark);
+      margin-bottom: 10px;
+    }
+
+    .contact-highlight span {
+      font-size: 15px;
+    }
+
+    .contact-form {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 14px 14px;
+      border: 1px solid #dde5f4;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contact-form h3 {
+      margin-top: 0;
+      margin-bottom: 6px;
+      font-size: 16px;
+      color: var(--primary-dark);
+    }
+
+    .contact-form p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .form-group {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    label {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    input,
+    textarea {
+      border-radius: 10px;
+      border: 1px solid #ccd5e7;
+      padding: 8px 9px;
+      font-size: 13px;
+      font-family: inherit;
+      resize: vertical;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: 2px solid rgba(26,115,232,0.35);
+      border-color: var(--accent);
+    }
+
+    textarea {
+      min-height: 70px;
+    }
+
+    .form-note {
+      font-size: 11px;
+      color: #6b7280;
+      margin-top: 8px;
+    }
+
+    button[type="submit"] {
+      margin-top: 8px;
+    }
+
+    footer {
+      border-top: 1px solid #d0dae9;
+      background: #ffffff;
+      margin-top: 14px;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 14px 18px 18px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 11px;
+      color: #6b7280;
+    }
+
+    .footer-inner a {
+      font-size: 11px;
+    }
+
+    .footer-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* Responsive */
+    @media (max-width: 980px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+      .hero-right {
+        order: -1;
+      }
+      .areas-grid {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+      }
+      .values-grid {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+      }
+      .phase-card {
+        grid-template-columns: 1fr;
+      }
+      .contact {
+        grid-template-columns: 1fr;
+      }
+      nav {
+        display: none;
+      }
+      .header-cta {
+        display: inline-flex;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-left,
+      .hero-panel,
+      .hero-note {
+        border-radius: 16px;
+      }
+      .areas-grid {
+        grid-template-columns: 1fr;
+      }
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+      .section {
+        padding-inline: 14px;
+      }
+      .form-row {
+        flex-direction: column;
+      }
+      .hero-grid {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+      }
+    }
+  </style>
+
+  <!-- Strukturierte Daten für die Unternehmensgruppe -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Wagner Unternehmensgruppe",
+    "url": "https://ug-wagner.xwise.one",
+    "description": "Unternehmensgruppe in Gründung mit den Bereichen Wohnen, Bäder, mobile Sanitärlösungen und Friseurhandwerk. Fokus auf Nachhaltigkeit, Standort Deutschland und faire Preise.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "DE"
+    },
+    "subOrganization": [
+      {
+        "@type": "Organization",
+        "name": "Wohn mit Wagner",
+        "url": "https://wohnmitwagner.de"
+      },
+      {
+        "@type": "Organization",
+        "name": "Bad mit Wagner",
+        "url": "https://badmitwagner.de"
+      },
+      {
+        "@type": "Organization",
+        "name": "Toilettenwagen Wagner",
+        "url": "https://redschnebber.de"
+      },
+      {
+        "@type": "Organization",
+        "name": "Passion for Hair by Kerstin",
+        "url": "https://passionforhairbykerstin.de"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <div class="logo-mark">W</div>
+        <div>
+          <div class="logo-text-main">Wagner Unternehmensgruppe</div>
+          <div class="logo-text-sub">UG • Wohnen • Bad • Service • Stil</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">Überblick</a>
+        <a href="#areas">Geschäftsbereiche</a>
+        <a href="#values">Werte</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+      <a href="#contact" class="btn-secondary header-cta">
+        Kontakt
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="section hero" id="top">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <div class="dot"></div>
+          <span>Unternehmensgruppe in Gründung</span>
+        </div>
+        <h1>Starke Lösungen für Wohnen, Bad, Service und Stil – aus einer Hand.</h1>
+        <p class="hero-sub">
+          Die Wagner Unternehmensgruppe bündelt Wohnbau-Projekte, hochwertige Bäder,
+          mobile Sanitärlösungen und modernes Friseurhandwerk. Solide Qualität,
+          verlässliche Abwicklung und klare Werte für die Mittelschicht und gehobene Mittelschicht.
+        </p>
+        <div class="hero-actions">
+          <a href="#areas" class="btn-primary">
+            Geschäftsbereiche entdecken
+            <span>›</span>
+          </a>
+          <a href="#values" class="btn-secondary">
+            Unsere Werte
+          </a>
+        </div>
+        <div class="hero-grid">
+          <div class="hero-grid-item">
+            <strong>Standorttreu</strong>
+            <p>Fokus auf Deutschland – kurze Wege, klare Verantwortung, nah am Kunden.</p>
+          </div>
+          <div class="hero-grid-item">
+            <strong>Nachhaltig gedacht</strong>
+            <p>Bewusste Auswahl von Materialien, Lieferanten und Betriebsmitteln.</p>
+          </div>
+          <div class="hero-grid-item">
+            <strong>Fair & wertig</strong>
+            <p>Top-Qualität zu fairen Preisen – ohne überflüssigen Schnickschnack.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-panel">
+          <h2>ug-Wagner.xwise.one</h2>
+          <p>
+            Auf dieser Seite erhalten Sie einen schnellen Überblick über alle Unternehmen der
+            Wagner Gruppe – mit direkter Weiterleitung zu den einzelnen Angeboten.
+          </p>
+          <div class="hero-tags">
+            <div class="hero-tag">Wohnbau & Ausbau</div>
+            <div class="hero-tag">Bäder & Sanitär</div>
+            <div class="hero-tag">Toilettenwagen</div>
+            <div class="hero-tag">Friseurhandwerk</div>
+          </div>
+        </div>
+        <div class="hero-note">
+          <strong>Hinweis zur Phase:</strong><br />
+          Die Wagner Unternehmensgruppe befindet sich in der Gründungs- und Aufbauphase.
+          Das Fundament entsteht jetzt – weitere Projekte und Geschäftsfelder sind in Planung.
+        </div>
+      </div>
+    </section>
+
+    <!-- ÜBERBLICK -->
+    <section class="section" id="about">
+      <h2 class="section-title">Über die Wagner Unternehmensgruppe</h2>
+      <p class="section-sub">
+        Ein klar strukturiertes Firmenverbund-Konzept, das Wohnen, Alltag und Wohlbefinden
+        intelligent verbindet – mit Fokus auf Qualität aus Deutschland.
+      </p>
+      <p style="font-size:14px; color:#4b5563; max-width:780px;">
+        Die Wagner Unternehmensgruppe vereint unterschiedliche, sich ergänzende Bereiche:
+        vom Wohnbau und Innenausbau über hochwertige Bäder und mobile Sanitärlösungen bis
+        hin zu professionellen Friseurdienstleistungen. Alle Unternehmen verfolgen denselben
+        Anspruch: verlässliche Qualität, nachhaltiges Handeln und faire Konditionen für
+        Menschen, die Wert auf solide Lösungen legen.
+      </p>
+    </section>
+
+    <!-- GESCHÄFTSBEREICHE -->
+    <section class="section areas" id="areas">
+      <h2 class="section-title">Geschäftsbereiche im Überblick</h2>
+      <p class="section-sub">
+        Vier Schwerpunkte, ein gemeinsamer Anspruch: nachhaltig, wertig, verlässlich.
+      </p>
+
+      <div class="areas-grid">
+        <!-- Wohn mit Wagner -->
+        <article class="area-card">
+          <div>
+            <div class="area-header">
+              <div class="area-icon">W</div>
+              <div>
+                <div class="area-title">Wohn mit Wagner</div>
+                <div class="area-subtitle">Wohnen & Bauen</div>
+              </div>
+            </div>
+            <div class="area-text">
+              Wohnprojekte mit Blick auf Alltagstauglichkeit, Wertbeständigkeit und
+              gutes Wohngefühl. Von der Planung bis zur Umsetzung mit verlässlichen
+              Partnern aus Deutschland.
+            </div>
+          </div>
+          <div class="area-link">
+            <a href="https://wohnmitwagner.de" target="_blank" rel="noopener">
+              <span>Zur Website</span> ›
+            </a>
+          </div>
+        </article>
+
+        <!-- Bad mit Wagner -->
+        <article class="area-card">
+          <div>
+            <div class="area-header">
+              <div class="area-icon">B</div>
+              <div>
+                <div class="area-title">Bad mit Wagner</div>
+                <div class="area-subtitle">Bäder & Sanitär</div>
+              </div>
+            </div>
+            <div class="area-text">
+              Funktionale, hochwertige Bäder mit klaren Linien. Durchdachte Lösungen,
+              langlebige Materialien und eine saubere Umsetzung für jeden Tag.
+            </div>
+          </div>
+          <div class="area-link">
+            <a href="https://badmitwagner.de" target="_blank" rel="noopener">
+              <span>Zur Website</span> ›
+            </a>
+          </div>
+        </article>
+
+        <!-- Toilettenwagen -->
+        <article class="area-card">
+          <div>
+            <div class="area-header">
+              <div class="area-icon">T</div>
+              <div>
+                <div class="area-title">Toilettenwagen</div>
+                <div class="area-subtitle">Events & Baustellen</div>
+              </div>
+            </div>
+            <div class="area-text">
+              Mobile Sanitärlösungen für Feste, Veranstaltungen und Baustellen.
+              Zuverlässig, sauber und komfortabel – damit sich Gäste und Teams wohlfühlen.
+            </div>
+          </div>
+          <div class="area-link">
+            <a href="https://redschnebber.de" target="_blank" rel="noopener">
+              <span>Zu redschnebber.de</span> ›
+            </a>
+          </div>
+        </article>
+
+        <!-- Friseur -->
+        <article class="area-card">
+          <div>
+            <div class="area-header">
+              <div class="area-icon">F</div>
+              <div>
+                <div class="area-title">Passion for Hair by Kerstin</div>
+                <div class="area-subtitle">Friseur & Stil</div>
+              </div>
+            </div>
+            <div class="area-text">
+              Persönlicher Service, typgerechte Beratung und sorgfältiges Handwerk
+              für einen gepflegten Auftritt im Alltag und zu besonderen Anlässen.
+            </div>
+          </div>
+          <div class="area-link">
+            <a href="https://passionforhairbykerstin.de" target="_blank" rel="noopener">
+              <span>Zur Website</span> ›
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- WERTE -->
+    <section class="section values" id="values">
+      <h2 class="section-title">Werte, die die Gruppe verbinden</h2>
+      <p class="section-sub">
+        Nicht nur das Ergebnis zählt, sondern auch, wie es entsteht.
+      </p>
+
+      <div class="values-grid">
+        <article class="value-card">
+          <div class="value-label">
+            <span>🌱</span> Nachhaltigkeit mit Augenmaß
+          </div>
+          <div class="value-text">
+            Die Auswahl von Materialien, Lieferanten und Abläufen erfolgt
+            bewusst. Es geht um langlebige Lösungen statt kurzfristiger Effekte –
+            im Bau, im Service und im laufenden Betrieb.
+          </div>
+        </article>
+
+        <article class="value-card">
+          <div class="value-label">
+            <span>🇩🇪</span> Fokus auf den Standort Deutschland
+          </div>
+          <div class="value-text">
+            Wo immer möglich werden Produkte, Geschäftsausstattungen und
+            Betriebsmittel von Unternehmen aus Deutschland bezogen. Das stärkt
+            regionale Strukturen und sichert Qualität.
+          </div>
+        </article>
+
+        <article class="value-card">
+          <div class="value-label">
+            <span>🤝</span> Top-Qualität zu fairen Preisen
+          </div>
+          <div class="value-text">
+            Die Wagner Gruppe positioniert sich bewusst im soliden Segment:
+            wertige Leistungen, transparente Konditionen und eine Zusammenarbeit
+            auf Augenhöhe – ohne überzogene Versprechen.
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GRÜNDUNGSPHASE -->
+    <section class="section phase">
+      <div class="phase-card">
+        <div>
+          <div class="phase-badge">
+            <span>●</span> Aufbauphase
+          </div>
+          <div class="phase-text-main">
+            Die Wagner Unternehmensgruppe befindet sich im strukturierten Aufbau.
+          </div>
+          <div class="phase-text-sub">
+            Bestehende Unternehmen werden zu einer klaren Gruppe geordnet, weitere
+            Bausteine können folgen. Im Fokus stehen:
+          </div>
+          <ul class="phase-list">
+            <li>strategische Bündelung der bestehenden Marken,</li>
+            <li>klare Strukturen für Kunden und Partner,</li>
+            <li>gezielter Ausbau von Qualität, Service und Angebot.</li>
+          </ul>
+        </div>
+        <aside class="phase-aside">
+          <strong>Für Partner und Lieferanten:</strong><br />
+          Wenn Ihnen Nachhaltigkeit, Verlässlichkeit und der Standort Deutschland
+          wichtig sind, ist die Wagner Unternehmensgruppe ein interessanter
+          Partner – insbesondere im Bereich Baustoffe, Ausstattung und Services.
+        </aside>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section contact" id="contact">
+      <div class="contact-info">
+        <h3>Kontakt zur Wagner Unternehmensgruppe</h3>
+        <div class="contact-highlight">
+          <span>ⓘ</span>
+          Erste Anlaufstelle für Anfragen zur Gruppe und zu Kooperationen.
+        </div>
+        <p>
+          Sie möchten mehr über die Unternehmensgruppe erfahren, eine
+          Kooperation prüfen oder sich als Lieferant vorstellen? Nutzen Sie das
+          Kontaktformular oder schreiben Sie direkt eine E-Mail.
+        </p>
+        <p>
+          <strong>E-Mail:</strong> <a href="mailto:info@ug-wagner.xwise.one">info@ug-wagner.xwise.one</a><br />
+          <strong>Web:</strong> <a href="https://ug-wagner.xwise.one">ug-Wagner.xwise.one</a>
+        </p>
+        <p style="font-size:12px; color:#6b7280; margin-top:10px;">
+          Für konkrete Projektanfragen (z.&nbsp;B. Badumbau, Wohnprojekt,
+          Toilettenwagen oder Friseurtermin) nutzen Sie bitte direkt die jeweilige
+          Website des Geschäftsbereichs.
+        </p>
+      </div>
+
+      <form class="contact-form">
+        <h3>Kurze Nachricht senden</h3>
+        <p>
+          Diese Anfrage dient als erste Kontaktaufnahme zur Unternehmensgruppe.
+          Die finale technische Umsetzung des Formulars kann je nach System noch erfolgen.
+        </p>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Ihr Name" />
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input id="email" type="email" name="email" placeholder="Ihre E-Mail-Adresse" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="topic">Betreff</label>
+          <input id="topic" type="text" name="topic" placeholder="z. B. Kooperation, Lieferant, Rückfrage" />
+        </div>
+        <div class="form-group">
+          <label for="message">Nachricht</label>
+          <textarea id="message" name="message" placeholder="Ihre Nachricht an die Wagner Unternehmensgruppe"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">
+          Anfrage unverbindlich absenden
+        </button>
+        <div class="form-note">
+          Hinweis: Dieses Formular benötigt noch eine technische Anbindung. Bis dahin
+          nutzen Sie bitte bevorzugt die E-Mail-Adresse.
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        © <span id="year"></span> Wagner Unternehmensgruppe – ug-Wagner.xwise.one
+      </div>
+      <div class="footer-group">
+        <span>Made in Germany.</span>
+        <span>Fokus auf Nachhaltigkeit und faire Partnerschaften.</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  // Jahreszahl im Footer automatisch setzen
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
